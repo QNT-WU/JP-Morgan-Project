@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "risky-model-tf"
+version = "0.1.0"
+description = "Risky debt (k,b,z) model with Mailer/MMW objectives implemented in TensorFlow"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "tensorflow",
+    "tensorflow-probability",
+    "numpy",
+    "matplotlib",
+    "pytest"
+]
+
+[tool.setuptools]
+packages = ["risky_debt", "Experiment", "estimation"]
+
+
+
