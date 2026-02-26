@@ -1,0 +1,6 @@
+tensorflow
+tensorflow-probability
+numpy
+matplotlib
+pytest
+scipy
