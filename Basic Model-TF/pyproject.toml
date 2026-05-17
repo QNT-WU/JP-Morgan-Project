@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "basic-model-tf"
+version = "0.2.0"
+description = "Client-facing Python package for the basic (k,z) Mailer/MMW model in TensorFlow"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "tensorflow",
+    "tensorflow-probability",
+    "numpy",
+    "matplotlib",
+    "pytest",
+    "scipy"
+]
+
+[project.scripts]
+basic-mailer-run = "basic_mailer.apps.run_pipeline:main"
+
+[tool.setuptools.packages.find]
+include = ["basic_mailer*", "Experiment*"]
